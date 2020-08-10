@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--Подключаем стили slick slider-->
+	<link rel="stylesheet" href="slick/slick.css"></link>
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/just-logo.png" type="image/x-icon">
+	<title>Document</title>
+	
+  </head>
+  <body>
+
+	<main class="main">
+		<div class="container">
+
+			<div class="header">
+				<div class="row">
+					<div class="col-lg-3 offset-lg-0 col-md-4 col-sm-12 col-xs-12">
+						<div class="wrap">
+							<div class="wrap-logo">
+								<div class="logo">
+									<img src="img/logo.png" alt="Гипсолит. Штукатурка стен">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 offset-lg-3 col-md-4 offset-md-0 col-sm-6 offset-sm-0 col-xs-12">
+						<div class="phone-block">
+							<a class="phone-link" href="#">+7 495 771 05 08</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="wrap">
+							<div class="wrap-block">
+								<button class="button header-btn">Получить консультацию</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="main-content">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="main-title">
+							<h1>Автоматизированная шуткатурка стен</h1>
+							<p class="main-subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
+							<span>
+								стоимость работ<br>
+								от <strong>300</strong> руб/м<sup>2</sup>
+							</span>
+							<strong class="main-trigger">
+								оплата по факту!
+							</strong>
+						</div>
+					</div>
+					<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-10 offset-sm-1 col-xs-12">
+						<div class="main-form">
+							<h2 class="main-form-header">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
+							<form action="#">
+								<label for="#">Ваше имя</label>
+								<input type="text" class="main-form-input">
+								<label for="#">Номер телефона</label>
+								<input type="text" class="main-form-input">
+								<button class="main-form-btn button" type="submit">оставьте заявку</button>
+								<small>Подарок в день обращения</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<section class="features">
+		<div class="container">
+			<h2 class="section-header">
+				Преимущество работы с нами
+			</h2>
+			<div class="features-slider">
+				<div class="features-block">
+					<div class="features-img">
+						<img src="img/money.png" alt="money">
+					</div>
+					<h3>Платите по факту</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nam facilis sapiente, laboriosam ipsam asperiores.</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<img src="img/bars.png" alt="bars">
+					</div>
+					<h3>Заключаем договор</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nulla sed itaque quisquam cum dolorum sunt nostrum possimus architecto alias!</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<img src="img/pig.png" alt="pig">
+					</div>
+					<h3>Точно в срок</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias perspiciatis quis praesentium cupiditate. Esse ratione, animi tempora!</p>
+				</div>
+				<div class="features-block">
+					<div class="features-img">
+						<img src="img/team.png" alt="team">
+					</div>
+					<h3>Экономьте материал</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore, veniam nostrum eius ducimus dicta alias eveniet et officia.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	
+	<script href="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+	<!--Jquery для slick slider-->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<!--Подключаем скрипты slick slider-->
+	<script src="slick/slick.min.js"></script>
+
+	<!--Инициализируем slick slider-->
+	<script>
+		$(document).ready(function(){
+		  $('.features-slider').slick({
+		    infinite: true,
+		    slidesToShow: 4,
+		    slidesToScroll: 1,
+		    responsive: [
+			    {
+			      breakpoint: 991,
+			      settings: {
+			        slidesToShow: 2,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 2,
+			        infinite: true,
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 1,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 1,
+			        infinite: true,
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+		  });
+		});
+	</script>
+  </body>
+</html>
