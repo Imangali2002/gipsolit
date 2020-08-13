@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
+	<!-- animate.css -->
+	<link type="text/css" rel="stylesheet" href="css/animate.min.css">
 	
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	<!--Подключаем стили slick slider-->
-	<link rel="stylesheet" href="slick/slick.css"></link>
-	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link type="text/css" rel="stylesheet" href="slick/slick.css"></link>
+	<link type="text/css" rel="stylesheet" href="slick/slick-theme.css">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 	
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -44,7 +47,7 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 						<div class="wrap">
 							<div class="wrap-block">
-								<button class="button header-btn">Получить консультацию</button>
+								<button class="button header-btn popup-btn">Получить консультацию</button>
 							</div>
 						</div>
 					</div>
@@ -54,7 +57,7 @@
 			<div class="main-content">
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<div class="main-title">
+						<div class="main-title wow animate__fadeInLeft" data-wow-duration="1.2s">
 							<h1>Автоматизированная шуткатурка стен</h1>
 							<p class="main-subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
 							<span>
@@ -67,14 +70,14 @@
 						</div>
 					</div>
 					<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-10 offset-sm-1 col-xs-12">
-						<div class="main-form">
+						<div class="main-form wow animate__fadeInRight" data-wow-duration="1.2s">
 							<h2 class="main-form-header">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
-							<form action="#">
+							<form class="form" action="#">
 								<label for="#">Ваше имя</label>
-								<input type="text" class="main-form-input">
+								<input class="form-input" type="text" required>
 								<label for="#">Номер телефона</label>
-								<input type="text" class="main-form-input">
-								<button class="main-form-btn button" type="submit">оставьте заявку</button>
+								<input class="form-input" type="text" required id="phone">
+								<button class="form-btn button" type="submit">оставьте заявку</button>
 								<small>Подарок в день обращения</small>
 							</form>
 						</div>
@@ -91,30 +94,30 @@
 				Преимущество работы с нами
 			</h2>
 			<div class="features-slider">
-				<div class="features-block">
+				<div class="features-block wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.1s">
 					<div class="features-img">
-						<img src="img/money.png" alt="money">
+						<img src="img/features/money.png" alt="money">
 					</div>
 					<h3>Платите по факту</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nam facilis sapiente, laboriosam ipsam asperiores.</p>
 				</div>
-				<div class="features-block">
+				<div class="features-block wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
 					<div class="features-img">
-						<img src="img/bars.png" alt="bars">
+						<img src="img/features/bars.png" alt="bars">
 					</div>
 					<h3>Заключаем договор</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nulla sed itaque quisquam cum dolorum sunt nostrum possimus architecto alias!</p>
 				</div>
-				<div class="features-block">
+				<div class="features-block wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
 					<div class="features-img">
-						<img src="img/pig.png" alt="pig">
+						<img src="img/features/pig.png" alt="pig">
 					</div>
 					<h3>Точно в срок</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias perspiciatis quis praesentium cupiditate. Esse ratione, animi tempora!</p>
 				</div>
-				<div class="features-block">
+				<div class="features-block wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.7s">
 					<div class="features-img">
-						<img src="img/team.png" alt="team">
+						<img src="img/features/team.png" alt="team">
 					</div>
 					<h3>Экономьте материал</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore, veniam nostrum eius ducimus dicta alias eveniet et officia.</p>
@@ -123,20 +126,652 @@
 		</div>
 	</section>
 
+	<section class="price">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="section-header section-header_light">
+						<h2>Цены</h2>
+						<p>Выберите врианты, которые подходят Вам:</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="price-button">
+						<button data-toggle="modal" class="button price-header-btn">Расчитать точную стоимость</button>
+					</div>
+				</div>
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+						<h4>Штукатурка вашим материалом</h4>
+						<img src="img/prices/prices1.jpg" alt="Штукатурка вашим материалам">
+						<span class="price-tag">от 300 руб/м<sup>2</sup></span>
+						<ul class="price-list">
+							<li>Проведение работ</li>
+							<li>Уборка</li>
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+						<h4>Штукатурка под шпатлёвку</h4>
+						<img src="img/prices/prices2.jpg" alt="Штукатурка под шпатлёвку">
+						<span class="price-tag">от 530 руб/м<sup>2</sup></span>
+						<ul class="price-list">
+							<li>Завоз материала и его объем</li>
+							<li>проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+				<div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+					<div class="price-block wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+						<h4>Штукатурка под обои</h4>
+						<img src="img/prices/prices3.jpg" alt="Штукатурка под обои">
+						<span class="price-tag">от 560 руб/м<sup>2</sup></span>
+						<ul class="price-list">
+							<li>Завоз материала и его объем</li>
+							<li>проведение работ</li>
+							<li>Уборка</li>
+							<li>Гарантия 2 года</li>
+							<li>Можно сразу клеить обои</li>
+						</ul>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+			</div><!-- row -->
+		</div>
+	</section>
+
+	<section class="feedback">
+		<div class="container">
+			
+			<div class="section-header">
+				<h2>Отзывы</h2>
+			</div>
+
+			<div class="feedback-slider">
+				<div class="feedback-slider_item">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/1.jpg" alt="">
+								<img src="img/feedback/2.jpg" alt="">
+								<img src="img/feedback/3.jpg" alt="">
+								<img src="img/feedback/4.jpg" alt="">
+								<img src="img/feedback/5.jpg" alt="">
+								<img src="img/feedback/6.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>
+								Площадь: <strong>357 м<sup>2</sup></strong>
+							</p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>прерады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar.jpg" class="mr-3">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h4 class="mt-0">Нахимов Артем</h4>
+							  </div>
+							</div>
+							<div class="feedback-text">
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Инициал снова букв, использовало раз.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback-slider_item" data-nav="thumbs">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/6.jpg" alt="">
+								<img src="img/feedback/1.jpg" alt="">
+								<img src="img/feedback/3.jpg" alt="">
+								<img src="img/feedback/2.jpg" alt="">
+								<img src="img/feedback/5.jpg" alt="">
+								<img src="img/feedback/4.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>
+								Площадь: <strong>357 м<sup>2</sup></strong>
+							</p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>прерады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar.jpg" class="mr-3">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h4 class="mt-0">Нахимов Артем</h4>
+							  </div>
+							</div>
+							<div class="feedback-text">
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Инициал снова букв, использовало раз.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="feedback-slider_item" data-nav="thumbs">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-width="100%" data-nav="thumbs">
+								<img src="img/feedback/3.jpg" alt="">
+								<img src="img/feedback/4.jpg" alt="">
+								<img src="img/feedback/2.jpg" alt="">
+								<img src="img/feedback/6.jpg" alt="">
+								<img src="img/feedback/1.jpg" alt="">
+								<img src="img/feedback/5.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>
+								Площадь: <strong>357 м<sup>2</sup></strong>
+							</p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>прерады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar.jpg" class="mr-3">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h4 class="mt-0">Нахимов Артем</h4>
+							  </div>
+							</div>
+							<div class="feedback-text">
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Инициал снова букв, использовало раз.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+
+					<div class="feedback-form">
+						<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+						<form class="form" action="#">
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<label for="#">Ваше имя</label>
+									<input type="text" class="form-input">
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<label for="#">Номер телефона</label>
+									<input type="text" class="form-input">
+								</div>
+							</div>
+							<button class="form-btn feedback-form-btn button" type="submit">оставьте заявку</button>
+						</form>
+					</div><!-- feedback form -->
+
+				</div><!-- col-md-8 -->
+			</div><!-- row -->
+
+		</div><!-- container -->
+		<img src="img/feedback/hand.png" class="hand">
+	</section>
 	
-	
-	<script href="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<section class="scheme">
+		<div class="container">
+			<div class="section-header">
+				<h2>
+					Схема работы
+				</h2>
+				<p>
+					Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 offset-sm-1 col-xs-8 offset-xs-2">
+					<div class="scheme-block">
+						<img src="img/scheme/1.png" alt="Заявка">
+						<h3>Заявка</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 col-sm-4 offset-sm-1 col-xs-8 offset-xs-2">
+					<div class="scheme-block">
+						<img src="img/scheme/2.png" alt="Выезд специалиста">
+						<h3>Выезд специалиста</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 col-sm-4 offset-sm-1 col-xs-8 offset-xs-2">
+					<div class="scheme-block">
+						<img src="img/scheme/3.png" alt="Составление догавора">
+						<h3>Составление догавора</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 offset-sm-1 col-xs-8 offset-xs-2">
+					<div class="scheme-block">
+						<img src="img/scheme/4.png" alt="Начало работ">
+						<h3>Начало работ</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+					</div>
+				</div>
+				<div class="col-md-3 offset-md-1 col-sm-4 offset-sm-1 col-xs-8 offset-xs-2">
+					<div class="scheme-block">
+						<img src="img/scheme/5.png" alt="Завершение работ">
+						<h3>Завершение работ</h3>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="all-inclusive">
+		<div class="container">
+			<div class="section-header section-header_active">
+				<h2>Все на 100% включено!</h2>
+				<p>Далеко-далеко за словесными горами в стране гласных.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">1.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Материал</h4>
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных.</p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">2.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Доставка оборудования и материала на объект</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">3.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Подготовка поверхности</h4>
+							<p>(очистка, грунтовка)</p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">4.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Оштукатуривание поверхности</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">5.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Установка маяков</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">6.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Глянцевание</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">7.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Удаление маяков</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+				<div class="col-md-3">
+					<div class="media">
+						<div class="media-left">
+							<span class="circle-border">
+								<span class="circle">8.</span>
+							</span>
+						</div>
+						<div class="media-body">
+							<h4>Уборка и вывоз мусора</h4>
+							<p></p>
+						</div>
+					</div>
+				</div><!--col-md-3-->
+			</div>
+
+		</div>
+	</section>
+
+	<section class="problems">
+		<div class="container">
+			<div class="section-header">
+				<h2></h2>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="problems-list problems-list_bad">
+						<h4>Какие могут быть проблемы</h4>
+						<ul>
+							<li>Стены и углы будут неровными </li>
+							<li>Ремонт затянется на долгие месяцы</li>
+							<li>Сложности с доставкой и разгрузкой материалов</li>
+							<li>Останется мусор и пыль после работ</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-5 offset-md-2">
+					<div class="problems-list problems-list_good">
+						<h4>Какие могут быть проблемы</h4>
+						<ul>
+							<li>Стены и углы будут неровными </li>
+							<li>Ремонт затянется на долгие месяцы</li>
+							<li>Сложности с доставкой и разгрузкой материалов</li>
+							<li>Останется мусор и пыль после работ</li>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="img/problems/girl.png" alt="Проблемы" class="problems-woman">
+	</section>
+
+	<section class="materials">
+		<div class="container">
+			<div class="section-header materials-header">
+				<h2>Материалы</h2>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные:</p>
+				
+			</div>
+			<div class="features-slider materials-slider">
+				<div class="features-block">
+					<div class="materials-img">
+						<img src="img/materials/1.png" alt="knauf">
+					</div>
+					<h3>Knauf</h3>
+					<p>МП-75 <strong>245</strong> руб/меш</p>
+					<a href="#" class="materials-link">Сертификат</a>
+				</div>
+				<div class="features-block">
+					<div class="materials-img">
+						<img src="img/materials/2.png" alt="volma">
+					</div>
+					<h3>Volma</h3>
+					<p>Аква слой <strong>245</strong> руб/меш</p>
+					<p>Гипс актив <strong>245</strong> руб/меш</p>
+					<a href="#" class="materials-link">Сертификат</a>
+				</div>
+				<div class="features-block">
+					<div class="materials-img">
+						<img src="img/materials/3.png" alt="forman">
+					</div>
+					<h3>Forman</h3>
+					<p>Аква слой <strong>245</strong> руб/меш</p>
+					<p>Гипс актив <strong>245</strong> руб/меш</p>
+					<a href="#" class="materials-link">Сертификат</a>
+				</div>
+				<div class="features-block">
+					<div class="materials-img">
+						<img src="img/materials/4.png" alt="ceresit">
+					</div>
+					<h3>Ceresit</h3>
+					<p>Аква слой <strong>245</strong> руб/меш</p>
+					<p>Гипс актив <strong>245</strong> руб/меш</p>
+					<a href="#" class="materials-link">Сертификат</a>
+				</div>
+			</div><!-- slider -->
+
+			<div class="materials-link_bottom">
+				<p>Далеко-далеко за словесными горами в стране <a href="#" class="materials-link">gicema.com</a> гласных и согласных живут рыбные тексты +7 495 790 69 90</p>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="tour">
+		<div class="container">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="main-title">
+							<h1>Посмотрите как мы работаем</h1>
+							<p class="main-subtitle">Далеко-далеко за словесными горами в стране, гласных и согласныхживут рыбные. <br><br>  Тексты ручеек необходимыми снова моей свой, повстречался толку, приставка, речью которой жизни единственное речью которой жизни единственное необходимыми снова моей свой, повстречался толку.</p>
+							<strong class="main-trigger">
+								оплата по факту!
+							</strong>
+						</div>
+					</div>
+					<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-10 offset-sm-1 col-xs-12">
+						<div class="main-form">
+							<h2 class="main-form-header">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
+							<form class="form" action="#">
+								<label for="#">Ваше имя</label>
+								<input type="text" class="form-input">
+								<label for="#">Номер телефона</label>
+								<input type="text" class="form-input">
+								<button class="form-btn button" type="submit">оставьте заявку</button>
+								<small>Подарок в день обращения</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="upsale">
+		<div class="container">
+			<div class="section-header">
+				<h2>Допольнительные услуги</h2>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="upsale-block">
+						<img src="img/upsale/1.jpg" alt="upsale">
+						<p>Монтаж Элекктропроводки</p>
+						<button class="button">Цены</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="upsale-block">
+						<img src="img/upsale/2.jpg" alt="upsale">
+						<p>Стяжка пола</p>
+						<button class="button">Цены</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="upsale-block">
+						<img src="img/upsale/3.jpg" alt="upsale">
+						<p>Сантехнические работы</p>
+						<button class="button">Цены</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Контакты</h2>
+					<p>Адрес офиса: <br>Москва, копейское шоссе, 12, офис 14</p>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d722.4790943290401!2d37.60514076656618!3d55.765828764190225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a40b55333b9%3A0xe1084b653e426a0e!2z0KLQstC10YDRgdC60L7QuSDRgC3QvSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNzAwNg!5e0!3m2!1sru!2skz!4v1597311841023!5m2!1sru!2skz" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+					<p>Номер телефона: <br><strong> +7 495 771 05 08</strong></p>
+					<p>E-mail: <br> <a href="mailto:order@gipolit.ru" class="contacts-link">order@gipsolit.ru</a></p>
+					<p>Реквизиты: <br>ИИН 35453453  ОРГН 34234234</p>
+				</div>
+				<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+					<div class="main-form contacts-form">
+						<h2 class="form-header">Оставьте контактные данные для связи</h2>
+						<form class="form" action="#">
+							<label for="#">Ваше имя</label>
+							<input type="text" class="form-input">
+							<label for="#">Номер телефона</label>
+							<input type="text" class="form-input">
+							<label for="#">Email</label>
+							<input type="text" class="form-input">
+							<label for="#">Сообщение</label>
+							<textarea class="form-textarea" rows="5"></textarea>
+							<button class="form-btn button" type="submit">Записаться на просмотр</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="logo">
+						<img src="img/logo.png" alt="Гипсолит. Штукатурка стен"></div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-contacts">
+						<p><strong> +7 495 771 05 08</strong></p>
+						<p><a href="mailto:order@gipolit.ru" class="contacts-link">order@gipsolit.ru</a></p>
+						<p class="contacts-link">Пн-Пт: с 9:00 до 18:00</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-dev-logo">
+						<p>Разработка сайта:</p>
+						<img src="img/just-logo.png" width="100px" alt="dev-logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!--    Модальные окна    -->
+	<!--Получить  консультацию-->
+	<div class="popup">
+		<!-- Само модальное окно -->
+		<div class="popup-dialog">
+			<!-- Содержимое окна -->
+			<div class="popup-content">
+				<button class="popup-close">&times;</button>
+				<h4 class="popup-header">Заинтересовало?</h4>
+				<p>Оставьте свои контактные данные <br>для связи</p>
+				<div class="form popup-form">
+					<form action="#">
+						<label for="#">Ваше имя</label>
+						<input type="text" class="form-input">
+						<label for="#">Номер телефона</label>
+						<input type="text" class="form-input">
+						<label for="#">Сообщение</label>
+						<textarea class="form-input" rows="5"></textarea>
+						<button class="form-btn button" type="submit">оставьте заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<!--Jquery для slick slider-->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-	<!--Подключаем скрипты slick slider-->
+	Подключаем скрипты slick slider
 	<script src="slick/slick.min.js"></script>
+
+	<!-- maskedInput js-->
+	<script src="js/jquery.maskedinput.min.js"></script>
+
+	<!--Bootstrap js-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- Fotorama -->
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+	<!-- maskedInput relization-->
+	<script>
+		jQuery(function($){
+		  $("#phone").mask("+7(999) 999-99-99");
+		  $("#tin").mask("99-9999999");
+		  $("#ssn").mask("999-99-9999");
+		});
+	</script>
+
+	<!--wow.js-->
+	<script src="js/wow.min.js"></script>
+  <script>
+  	new WOW().init();
+  </script>
 
 	<!--Инициализируем slick slider-->
 	<script>
 		$(document).ready(function(){
+			$('.popup-btn').on('click', function(event){
+				event.preventDefault();
+				$('.popup').fadeIn();
+			});
+
+			$('.popup-close').on('click', function(event){
+				event.preventDefault();
+				$('.popup').fadeOut();
+			});
+
+			$('.feedback-slider').slick({
+				prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"></button>',
+				nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"></button>',
+			});
+
 		  $('.features-slider').slick({
 		    infinite: true,
 		    slidesToShow: 4,
